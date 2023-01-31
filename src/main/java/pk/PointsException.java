@@ -2,7 +2,7 @@ package pk;
 import java.util.logging.*;
 import java.util.*;
 
-class Point implements Cloneable{
+class Point{
     private static final Logger LOGGER =  Logger.getLogger("InfoLogging");
     int x;
     int y;
@@ -12,6 +12,10 @@ class Point implements Cloneable{
     }
     String check(int x, int y){
         return (this.x == x && this.y == y) ? "\n true the values are same":"\n false the values are same";    
+    }
+    Point(Point p){
+        this.x = p.x;
+        this.y = p.y;
     }
 
     protected Object clone() throws CloneNotSupportedException{
@@ -31,7 +35,7 @@ public class PointsException
         LOGGER.info("Enter y1:");
         int y1 = sc.nextInt();
         Point p = new Point(x1,y1);
-        Point p1 = (Point)p.clone();
+        Point p1 = new Point(p);
         LOGGER.info("Enter x2:");
         p1.x = sc.nextInt();
         LOGGER.info("Enter y2:");

@@ -12,7 +12,7 @@ class CONNECT{
     private CONNECT(String con){
         this.con = con;
         String s = con;
-        LOGGER.info(s);
+        LOGGER.info(s); 
     }
     void close() {
         this.con = "closed";

@@ -14,7 +14,6 @@ abstract class Shapes{
     protected static final Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     abstract void perimeter();
     abstract void area();
-
 }
 
 class Triangle extends Shapes{

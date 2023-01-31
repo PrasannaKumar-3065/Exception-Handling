@@ -64,7 +64,7 @@ public class StudentException
                 else{
                     n = 0;
                 }
-            }catch(Exception e){
+            }catch(InputMismatchException e){
                 String s1 = ""+e;
                 LOGGER.info(s1);
                 sc.nextLine();
