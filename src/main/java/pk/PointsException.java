@@ -26,7 +26,7 @@ class Point{
 public class PointsException 
 {
     private static final Logger LOGGER =  Logger.getLogger("InfoLogging");
-    public static void main( String[] args ) throws CloneNotSupportedException
+    public static void main( String[] args )
     {
         try{
         Scanner sc = new Scanner(System.in);
