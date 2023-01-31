@@ -31,7 +31,7 @@ class CREDIT{
 public class CreditCardException 
 {
     private static final Logger LOGGER =  Logger.getLogger("InfoLogging");
-    public static void main( String[] args ) throws CloneNotSupportedException
+    public static void main( String[] args )
     {
         String card = "Enter card number: ";
         Scanner sc = new Scanner(System.in);
